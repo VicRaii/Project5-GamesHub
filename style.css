@@ -26,9 +26,10 @@ ul {
 body {
   transition: 0.7s ease;
   height: 100vh;
-  /* background-image: url(./assets/gamesHubBck2.jpg); */
+  background-image: url(/dist/assets/gamesHubBck2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }

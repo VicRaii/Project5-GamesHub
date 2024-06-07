@@ -1,44 +1,49 @@
 #app {
   position: relative;
-  border: 1px solid #000;
 }
 .disabled {
   pointer-events: none;
 }
 .container-app {
+  width: 20%;
+  height: 90%;
   display: flex;
   flex-direction: column;
-  background-color: transparent;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  border: 1px solid #d02525;
+  background-color: rgba(226, 199, 165, 0.728);
 }
 .time {
-  background-color: transparent;
+  color: var(--p5-color-1);
   padding-top: 0.5rem;
 }
 .reload,
 .time-start {
+  width: fit-content;
+  height: fit-content;
   letter-spacing: 0.4rem;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  font-size: 12px;
+  padding: 10px;
   border-radius: 20px;
-  color: var(--color-terciary);
-  background-color: var(--bck-color-secondary);
+  color: var(--p5-color-2);
+  background-color: rgba(242, 234, 234, 0.455);
   cursor: pointer;
   transition: all 0.5s;
   font-display: center;
   font-weight: bold;
 }
-#reload:hover {
-  transform: scale(1.04);
+
+.time-start:hover,
+.reload:hover {
+  transform: scale(1.1);
 }
+
 .container-game2 {
-  border: 1px solid #000000;
-  background-color: transparent;
-  width: 100%;
+  width: 90%;
   height: 80svh;
+  margin-left: 5%;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -47,22 +52,21 @@
 
 .counter-title {
   padding: 1rem;
-  background-color: transparent;
   margin: 1rem;
   border-radius: 20px;
-  font-size: 13.33px;
-  color: var(--color-terciary);
+  font-size: 13px;
+  color: var(--p5-color-2);
   letter-spacing: 0.2rem;
-  border-bottom: 3px solid var(--bck-color-secondary);
-  box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.35);
+  text-align: center;
+  box-shadow: 1px 5px 5px 0px rgba(195, 53, 53, 0.35);
   font-display: center;
   font-weight: bold;
 }
 
 .game-container {
-  background-color: rgba(0, 0, 0, 0.296);
-  width: 50%;
-  height: 90%;
+  width: 70%;
+  height: 100%;
+  padding: 10px 0px;
   display: grid;
   place-items: center;
   align-items: start;
@@ -71,14 +75,14 @@
   grid-template-rows: repeat(3, 1fr);
   gap: 15px;
 }
+
 .flip-card {
-  width: 100px;
-  height: 100px;
-  border: 1px solid #000;
-  border-radius: 10px;
-  object-position: center;
-  /* perspective: 1000px; */
+  width: 125px;
+  height: 125px;
+  border-radius: 100%;
+  perspective: 1000px;
 }
+
 .flip-card-inner {
   width: 100%;
   height: 100%;
@@ -90,136 +94,84 @@
 
 .flip-card-front,
 .flip-card-back {
-  background-color: transparent;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
-  border-radius: 100%;
   position: absolute;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
 .flip-card-back {
   transform: rotateY(180deg);
 }
+
 .flipped .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.image-card,
-.img-back {
+.image-card {
   width: 100%;
   height: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.img-back {
+  width: 60%;
+  height: 100%;
+  object-position: center;
   object-fit: cover;
-  border-radius: 50px;
+  border-radius: 20px;
   cursor: pointer;
   transition: all 0.5s;
 }
 
 .image-card:hover,
 .img-back:hover {
-  transform: scale(1.08);
-}
-.win-text {
-  background-color: transparent;
-  color: var(--bck-color-secondary);
+  transform: scale(1.1);
 }
 
-@media (max-width: 1030px) {
+.win-text {
+  margin-top: 20px;
+  font-size: 20px;
+  color: var(--p5-color-1);
+}
+
+@media (max-width: 1000px) {
   .container-game2 {
-    display: flex;
-    padding-top: 160px;
-    padding-left: 0px;
-    justify-content: center;
-    gap: 10px;
+    display: block;
   }
   .container-app {
-    display: flex;
+    width: 100%;
+    height: 10svh;
     flex-direction: row;
-    width: 90%;
-    background-color: transparent;
-    justify-content: center;
-    align-items: flex-end;
   }
   .game-container {
-    gap: 2px;
-    row-gap: 0px;
-    height: 0px;
-    justify-items: center;
-  }
-}
-@media (max-width: 925px) {
-  .container-game2 {
-    padding-top: 120px;
-    gap: 10px;
-  }
-}
-@media (max-width: 855px) {
-  .counter-title {
-    margin: 1rem;
-    font-size: 1rem;
-    border-radius: 20px;
-    text-align: center;
-    padding: 1rem;
-    letter-spacing: 0.2rem;
-  }
-}
-@media (max-width: 660px) {
-  .container-app {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    background-color: transparent;
-    justify-content: center;
-    align-items: flex-end;
-  }
-  .reload,
-  .time-start {
-    letter-spacing: 0.2rem;
-    font-size: 1rem;
-    padding: 8px;
-  }
-  .counter-title {
-    font-size: 1rem;
-    padding: 8px;
-  }
-}
-@media (max-width: 630px) {
-  .container-game2 {
-    padding-top: 160px;
-    gap: 1px;
-  }
-  .reload,
-  .time-start {
-    padding: 8px;
-    margin: 10px;
-  }
-  .counter-title {
-    padding: 8px;
-    margin: 10px;
+    width: 80%;
+    height: 87%;
+    margin-left: 10%;
   }
   .flip-card {
-    width: 100px;
-    height: 100px;
-    perspective: 1000px;
+    width: 110px;
+    height: 110px;
   }
 }
-@media (max-width: 430px) {
+
+@media (max-width: 630px) {
   .container-app {
-    margin-bottom: 20px;
-    margin-top: 20px;
+    width: 100%;
+    height: 20svh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px 0px;
+  }
+  .game-container {
+    width: 80%;
+    height: 65%;
   }
   .flip-card {
     width: 80px;
     height: 80px;
-    perspective: 1000px;
-  }
-  .reload,
-  .time-start {
-    padding: 8px;
-    margin: 4px;
-  }
-  .counter-title {
-    padding: 8px;
-    margin: 4px;
   }
 }
