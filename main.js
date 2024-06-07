@@ -1,6 +1,23 @@
-import { Header } from "./public/src/components/Header/Header";
+import { createHeader } from "./src/components/Header/Header";
+import { memoryGame } from "./src/pages/MemoryGame/memoryGame";
+import { mainPage } from "./src/pages/MainPage/mainPage";
+import { GAMES, QUIZ } from "./src/data/data";
 import "./style.css";
 
-const divApp = document.querySelector("#app");
+createHeader(GAMES);
+mainPage();
 
-Header(divApp);
+const returnToMainPage = document.querySelector("#title");
+
+returnToMainPage.addEventListener("click", () => {
+  const app = document.querySelector("#app");
+  app.innerHTML = "";
+  mainPage();
+});
+
+const gameButton = document.querySelector(".game-btn");
+gameButton.addEventListener("click", () => {
+  const app = document.querySelector("#app");
+  app.innerHTML = "";
+  memoryGame(GAMES[0].id);
+});

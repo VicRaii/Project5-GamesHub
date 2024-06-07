@@ -1,5 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+:root {
+  --p5-color-1: #ff2600;
+  --p5-color-2: #000000;
+  --p5-color-3: #ffff;
+  --p5-color-4: #df4a30;
+
+  --p5-font-family: "VT323", monospace;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--p5-font-family);
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+body {
+  transition: 0.7s ease;
+  height: 100vh;
+  /* background-image: url(./assets/gamesHubBck2.jpg); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(3px);
 }

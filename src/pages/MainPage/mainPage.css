@@ -1,0 +1,13 @@
+.mainPageContainer {
+  height: 50svh;
+  width: auto;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+#mainPageTitle {
+  letter-spacing: 1px;
+  max-width: 800px;
+  color: var(--p5-color-1);
+}
