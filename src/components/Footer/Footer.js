@@ -5,11 +5,11 @@ export const footer = () => {
   const footer = document.createElement("footer");
   footer.innerHTML = `
         <audio
-        autoplay
-        src="/assets/gaming lofi mix.mp3"
+        controls
+        src="/assets/gaming-lofi-mix-comprimido.mp3"
         type="audio/mp3">
         </audio>
-        <h3>Designed by Víctor</h3>
+        <h3>Designed and Developed by Víctor Ruiz</h3>
     `;
 
   body.appendChild(footer);
