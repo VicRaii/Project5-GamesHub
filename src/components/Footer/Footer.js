@@ -5,7 +5,7 @@ export const footer = () => {
   const footer = document.createElement("footer");
   footer.innerHTML = `
         <audio
-        autoplay
+        controls
         src="/gaming-lofi-mix-comprimido.mp3"
         type="audio/mp3">
         </audio>
