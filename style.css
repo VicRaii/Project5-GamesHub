@@ -26,7 +26,8 @@ ul {
 body {
   transition: 0.7s ease;
   height: 100vh;
-  background-image: url(/gamesHubBck2.jpg);
+  /* background-image: url(/assets/gamesHubBck2.jpg); */
+  background-color: aqua;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
