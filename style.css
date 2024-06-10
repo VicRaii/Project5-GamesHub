@@ -25,12 +25,17 @@ ul {
 
 body {
   transition: 0.7s ease;
-  height: 100vh;
+  height: 110vh;
   background-image: url(/gamesHubBck2.jpg);
-  /* background-color: aqua; */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
+}
+
+@media (max-width: 630px) {
+  body {
+    height: 90vh;
+  }
 }

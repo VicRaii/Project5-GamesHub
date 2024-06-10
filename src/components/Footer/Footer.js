@@ -6,7 +6,7 @@ export const footer = () => {
   footer.innerHTML = `
         <audio
         controls
-        src="/gaming-lofi-mix-comprimido.mp3">
+        src="/gaming-lofi-mix-comprimido.mp3"
         type="audio/mp3">
         </audio>
         <h3>Designed and Developed by Víctor Ruiz</h3>

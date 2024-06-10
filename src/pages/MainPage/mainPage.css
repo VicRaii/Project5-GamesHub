@@ -1,20 +1,23 @@
 .mainPageContainer {
   height: 50svh;
   width: auto;
-  display: grid;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 100px;
+  align-items: center;
   text-align: center;
+  gap: 30px;
 }
 
 #mainPageTitle {
+  height: 20svh;
+  width: 100%;
   letter-spacing: 1px;
-  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
   color: var(--p5-color-1);
-}
-
-audio {
-  width: 100px;
-  height: 3svh;
-  box-shadow: 5px 5px 20px rgba(118, 194, 135, 0.4);
-  border-radius: 90px;
 }
