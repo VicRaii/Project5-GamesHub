@@ -11,3 +11,10 @@
   max-width: 800px;
   color: var(--p5-color-1);
 }
+
+audio {
+  width: 100px;
+  height: 3svh;
+  box-shadow: 5px 5px 20px rgba(118, 194, 135, 0.4);
+  border-radius: 90px;
+}

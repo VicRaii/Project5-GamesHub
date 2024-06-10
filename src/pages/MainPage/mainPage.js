@@ -8,8 +8,11 @@ export const mainPage = () => {
   mainPageContainer.className = "mainPageContainer";
   mainPageTitle.id = "mainPageTitle";
   mainPageTitle.innerHTML = `
-  <h1>Wellcome to my GamesHub</h1>
-  <h2>Pick a Game</h2>
+  <h2>Wellcome to my GamesHub</h2>
+  <h1>Pick a Game</h1>
+    <a href="#Memory"><img src="" alt="">Memory</a>
+    <a href="#Hanged"><img src="" alt=""></a>
+    <a href="#Trivial"><img src="" alt=""></a>
   `;
 
   mainPageContainer.appendChild(mainPageTitle);
