@@ -39,7 +39,7 @@ header button:hover {
 @media (max-width: 777px) {
   header {
     justify-content: start;
-    gap: 20px;
+    gap: 10px;
   }
   header h1 {
     font-size: 1rem;
