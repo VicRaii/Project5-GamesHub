@@ -3,22 +3,22 @@ import "./memoryGame.css";
 
 export const memoryGame = (data) => {
   const cards = [
-    "https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt49d455537d60c8ea/5f57beb458d02047f3edc787/Champion_Ahri_HP.png",
-    "https://i.pinimg.com/236x/a6/3b/e6/a63be6986de3aab0dd9b24716886dd2c.jpg",
-    "https://i.pinimg.com/236x/0d/51/59/0d5159226c6eba9abd18da833ed7b4a8.jpg",
-    "https://i.pinimg.com/236x/2e/04/79/2e0479acf57fd21a5b2fb1bf58d67ee5.jpg",
-    "https://i.pinimg.com/236x/97/08/d3/9708d3219cf8a90e0af1f45fa3744ed1.jpg",
-    "https://i.pinimg.com/236x/20/e9/fe/20e9fef5061225eb92f7f448a5b52238.jpg",
-    "https://i.pinimg.com/236x/ab/0b/14/ab0b1410d107275f2416636e93bde999.jpg",
-    "https://i.pinimg.com/736x/0d/57/32/0d5732ccd377580bbfbe61cbbf2047e5.jpg",
-    "https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt49d455537d60c8ea/5f57beb458d02047f3edc787/Champion_Ahri_HP.png",
-    "https://i.pinimg.com/236x/a6/3b/e6/a63be6986de3aab0dd9b24716886dd2c.jpg",
-    "https://i.pinimg.com/236x/0d/51/59/0d5159226c6eba9abd18da833ed7b4a8.jpg",
-    "https://i.pinimg.com/236x/2e/04/79/2e0479acf57fd21a5b2fb1bf58d67ee5.jpg",
-    "https://i.pinimg.com/236x/97/08/d3/9708d3219cf8a90e0af1f45fa3744ed1.jpg",
-    "https://i.pinimg.com/236x/20/e9/fe/20e9fef5061225eb92f7f448a5b52238.jpg",
-    "https://i.pinimg.com/236x/ab/0b/14/ab0b1410d107275f2416636e93bde999.jpg",
-    "https://i.pinimg.com/736x/0d/57/32/0d5732ccd377580bbfbe61cbbf2047e5.jpg",
+    "https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt0a1d95d8a5651837/636c5f60421feb097ddb6393/11132022_WRNewsArticle_WildRiftNewsViPaintover.png",
+    "https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt81d4f3afc6931dfe/5f4def524a7bbc279b844b98/champion_overview_jinx_og.png",
+    "https://popstop.co.nz/wp-content/uploads/2024/01/HOTVGM60.png",
+    "https://i.pinimg.com/originals/db/b4/20/dbb420a87968c13c12e1f9e8ef8d4cb1.png",
+    "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e632e5f3-ea51-4a14-a0fe-3478869513d3/df49a97-0565ec79-3c0a-43d1-8aa2-ea7289bd6a85.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U2MzJlNWYzLWVhNTEtNGExNC1hMGZlLTM0Nzg4Njk1MTNkM1wvZGY0OWE5Ny0wNTY1ZWM3OS0zYzBhLTQzZDEtOGFhMi1lYTcyODliZDZhODUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.b-7k08fhg4lfM66CKWXbD1zX-ZImreo0pJQgrBHoqeM",
+    "https://pbs.twimg.com/media/E_nolwKUYAUX6-t.png",
+    "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7b547dbd-d7c2-4d0a-ac40-11898830679f/d86i3vx-40bce725-744b-4d91-9f6e-d23839d4e37d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdiNTQ3ZGJkLWQ3YzItNGQwYS1hYzQwLTExODk4ODMwNjc5ZlwvZDg2aTN2eC00MGJjZTcyNS03NDRiLTRkOTEtOWY2ZS1kMjM4MzlkNGUzN2QucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.CJMYZCKsUYGU0_cljzZJEnAbmPw_XNEggEX1Xn5fEk4",
+    "https://i.redd.it/iu8pxd8dccr51.png",
+    "https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt0a1d95d8a5651837/636c5f60421feb097ddb6393/11132022_WRNewsArticle_WildRiftNewsViPaintover.png",
+    "https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt81d4f3afc6931dfe/5f4def524a7bbc279b844b98/champion_overview_jinx_og.png",
+    "https://popstop.co.nz/wp-content/uploads/2024/01/HOTVGM60.png",
+    "https://i.pinimg.com/originals/db/b4/20/dbb420a87968c13c12e1f9e8ef8d4cb1.png",
+    "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e632e5f3-ea51-4a14-a0fe-3478869513d3/df49a97-0565ec79-3c0a-43d1-8aa2-ea7289bd6a85.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U2MzJlNWYzLWVhNTEtNGExNC1hMGZlLTM0Nzg4Njk1MTNkM1wvZGY0OWE5Ny0wNTY1ZWM3OS0zYzBhLTQzZDEtOGFhMi1lYTcyODliZDZhODUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.b-7k08fhg4lfM66CKWXbD1zX-ZImreo0pJQgrBHoqeM",
+    "https://pbs.twimg.com/media/E_nolwKUYAUX6-t.png",
+    "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7b547dbd-d7c2-4d0a-ac40-11898830679f/d86i3vx-40bce725-744b-4d91-9f6e-d23839d4e37d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdiNTQ3ZGJkLWQ3YzItNGQwYS1hYzQwLTExODk4ODMwNjc5ZlwvZDg2aTN2eC00MGJjZTcyNS03NDRiLTRkOTEtOWY2ZS1kMjM4MzlkNGUzN2QucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.CJMYZCKsUYGU0_cljzZJEnAbmPw_XNEggEX1Xn5fEk4",
+    "https://i.redd.it/iu8pxd8dccr51.png",
   ];
   let flipped = [];
   let score = 0;
@@ -111,7 +111,7 @@ export const memoryGame = (data) => {
       if (score === cards.length / 2) {
         clearInterval(interval);
         const winMessage = document.createElement("h3");
-        winMessage.innerText = "Victory!";
+        winMessage.textContent = "Victory!";
         winMessage.className = "win-text";
         counterScore.append(winMessage);
       }

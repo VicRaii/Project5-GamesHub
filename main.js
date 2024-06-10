@@ -3,9 +3,11 @@ import { memoryGame } from "./src/pages/MemoryGame/memoryGame";
 import { mainPage } from "./src/pages/MainPage/mainPage";
 import { GAMES, QUIZ } from "./src/data/data";
 import "./style.css";
+import { footer } from "./src/components/Footer/Footer";
 
 createHeader(GAMES);
 mainPage();
+footer();
 
 const returnToMainPage = document.querySelector("#title");
 
