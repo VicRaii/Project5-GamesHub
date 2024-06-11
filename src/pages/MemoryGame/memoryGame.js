@@ -18,8 +18,9 @@ export const memoryGame = (data) => {
     "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e632e5f3-ea51-4a14-a0fe-3478869513d3/df49a97-0565ec79-3c0a-43d1-8aa2-ea7289bd6a85.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U2MzJlNWYzLWVhNTEtNGExNC1hMGZlLTM0Nzg4Njk1MTNkM1wvZGY0OWE5Ny0wNTY1ZWM3OS0zYzBhLTQzZDEtOGFhMi1lYTcyODliZDZhODUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.b-7k08fhg4lfM66CKWXbD1zX-ZImreo0pJQgrBHoqeM",
     "https://pbs.twimg.com/media/E_nolwKUYAUX6-t.png",
     "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7b547dbd-d7c2-4d0a-ac40-11898830679f/d86i3vx-40bce725-744b-4d91-9f6e-d23839d4e37d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdiNTQ3ZGJkLWQ3YzItNGQwYS1hYzQwLTExODk4ODMwNjc5ZlwvZDg2aTN2eC00MGJjZTcyNS03NDRiLTRkOTEtOWY2ZS1kMjM4MzlkNGUzN2QucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.CJMYZCKsUYGU0_cljzZJEnAbmPw_XNEggEX1Xn5fEk4",
-    "https://i.redd.it/iu8pxd8dccr51.png",
+    "https://i.redd.it/iu8pxd8dccr51.png"
   ];
+
   let flipped = [];
   let score = 0;
   let counter = 0;

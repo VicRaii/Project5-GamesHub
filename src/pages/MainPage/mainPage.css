@@ -27,7 +27,6 @@
   width: fit-content;
   padding: 10px;
   color: var(--p5-color-1);
-  /* background: #912b2274; */
   text-shadow: 0 0 10px #000000;
   border-radius: 10px;
 }
@@ -83,6 +82,20 @@
   border-radius: 10px;
   filter: blur(8px);
   animation: glowing 20s linear infinite;
+}
+
+@media (max-width:500px) {
+  #mainPageTitle h1 {
+    font-size: 3rem;
+  }
+  #mainPageTitle h2 {
+    font-size: 1.5rem;
+  }
+  #playBtn,
+#pauseBtn {
+  font-size: 20px;
+}
+  
 }
 
 @keyframes glowing {

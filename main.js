@@ -5,6 +5,7 @@ import { GAMES, QUIZ } from "./src/data/data";
 import "./style.css";
 import { footer } from "./src/components/Footer/Footer";
 import { JumperGame } from "./src/pages/JumperGame/JumperGame";
+// import { initTivialGame } from "./src/pages/TrivialGame/trivialGame";
 
 createHeader(GAMES);
 mainPage();
@@ -31,3 +32,10 @@ JumperGameButton.addEventListener("click", () => {
   app.innerHTML = "";
   JumperGame();
 });
+
+// const trivialGameButton = document.querySelector("#Trivial");
+// trivialGameButton.addEventListener("click", () => {
+//   const app = document.querySelector("#app");
+//   app.innerHTML = "";
+//   initTivialGame();
+// });
