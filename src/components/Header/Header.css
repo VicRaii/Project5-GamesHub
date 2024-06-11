@@ -8,19 +8,23 @@ header {
 }
 
 header h1 {
+  width: fit-content;
   color: var(--p5-color-4);
   background-color: var(--p5-color-3);
-  padding: 10px;
+  padding: 10px 20px;
+  margin-left: 10px;
   border-radius: 30px;
   cursor: pointer;
   font-size: 2rem;
+  text-align: center;
 }
 
 header nav {
-  width: 50%;
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  gap: 80px;
 }
 
 header button {
@@ -38,12 +42,11 @@ header button:hover {
 
 @media (max-width: 777px) {
   header {
-    justify-content: start;
-    gap: 10px;
+    justify-content: center;
+    gap: 0px;
   }
   header h1 {
     font-size: 1rem;
-    margin-left: 10px;
   }
   header button {
     font-size: 1rem;
@@ -52,6 +55,12 @@ header button:hover {
     letter-spacing: 0px;
   }
   header nav {
-    width: 30%;
+    width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  header nav {
+    gap: 0px;
   }
 }

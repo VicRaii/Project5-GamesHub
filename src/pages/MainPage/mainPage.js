@@ -8,8 +8,8 @@ export const mainPage = () => {
   mainPageContainer.className = "mainPageContainer";
   mainPageTitle.id = "mainPageTitle";
   mainPageTitle.innerHTML = `
-  <h1>Wellcome to my GamesHub</h1>
-  <h2>Pick a Game</h2>
+  <h1>Welcome to my GamesHub</h1>
+  <h2>Play Some Music</h2>
   `;
 
   let sound = new Audio("./gaming-lofi-mix-comprimido.mp3");
