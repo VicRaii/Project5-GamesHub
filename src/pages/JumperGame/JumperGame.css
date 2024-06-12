@@ -10,14 +10,37 @@
   flex-direction: column;
 }
 
+#gameOver {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: var(--p5-color-1);
+}
+
 #assetsContainer {
   width: 100%;
   height: 90%;
-  background-image: url(/public/background.png);
+  background-image: url(/background.png);
   background-size: cover;
   background-repeat: repeat-x;
-  animation: slideright 600s infinite linear;
-  -webkit-animation: slideright 600s infinite linear;
+}
+
+#scoreContainer {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  font-size: 24px;
+  color: black;
+}
+
+#highScoreContainer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: black;
 }
 
 #character {
@@ -26,7 +49,7 @@
   position: absolute;
   bottom: 75px;
   left: 100px;
-  background-image: url(/public/dino.png);
+  background-image: url(/dino.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -38,17 +61,15 @@
 #block {
   width: 50px;
   height: 50px;
-  background-image: url(/public/cactus.png);
+  background-image: url(/cactus.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
   bottom: 74px;
   right: 3px;
-  animation: block 1.2s infinite;
 }
 
 #buttonContainer {
-  border-top: 3px dashed red;
   width: 100%;
   height: 10%;
   display: flex;
@@ -57,6 +78,7 @@
   gap: 60px;
   background-color: white;
 }
+
 #startButton,
 #jumpButton {
   width: 40%;
@@ -65,34 +87,6 @@
   font-size: 2rem;
   background-color: transparent;
   cursor: pointer;
-}
-
-@keyframes slideright {
-  from {
-      background-position: 70000%;
-  }
-  to {
-      background-position: 0%;
-  }
-}
-
-@keyframes jump {
-  0% {
-    bottom: 200px;
-  }
-  50% {
-    bottom: 100px;
-  }
-  100% {
-    bottom: 150px;
-  }
-}
-
-@keyframes block {
-  0%{ left: 76vw; }
-  
-  100% { left: 0.5vw; }
-    
 }
 
 @media (max-width: 800px) {
@@ -121,16 +115,89 @@
   }
 
   #character {
-    width: 20px;
+    width: 30px;
     height: 50px;
-    bottom: 70px;
-    left: 5px;
+    bottom: 60px;
+    left: 35px;
   }
   #block {
     width: 20px;
     height: 20px;
     bottom: 70px;
-    animation: block 1.3s infinite;
   }
 }
 
+@media (max-height: 400px) {
+  #game {
+    width: 90%;
+    height: 80svh;
+    left: 5%;
+  }
+  #assetsContainer {
+    width: 100%;
+    height: 83%;
+  }
+  #buttonContainer {
+    width: 100%;
+    height: 17%;
+    border: none;
+  }
+  #character {
+    width: 30px;
+    height: 50px;
+    bottom: 45px;
+    left: 35px;
+  }
+  #block {
+    width: 25px;
+    height: 25px;
+    bottom: 67px;
+    right: 20px;
+  }
+
+  .animate {
+    animation: jumpLess 0.4s;
+  }
+
+  @keyframes jumpLess {
+    0% {
+      bottom: 100px;
+    }
+    50% {
+      bottom: 110px;
+    }
+    100% {
+      bottom: 100px;
+    }
+  }
+}
+
+@keyframes slideright {
+  from {
+    background-position: 70000%;
+  }
+  to {
+    background-position: 0%;
+  }
+}
+
+@keyframes jump {
+  0% {
+    bottom: 150px;
+  }
+  50% {
+    bottom: 190px;
+  }
+  100% {
+    bottom: 150px;
+  }
+}
+
+@keyframes blockMove {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -20px;
+  }
+}

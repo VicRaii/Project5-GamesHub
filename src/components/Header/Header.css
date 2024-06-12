@@ -20,7 +20,7 @@ header h1 {
 }
 
 header nav {
-  width: 100%;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,9 +45,7 @@ header button:hover {
     justify-content: center;
     gap: 0px;
   }
-  header h1 {
-    font-size: 1rem;
-  }
+  header h1,
   header button {
     font-size: 1rem;
   }
@@ -62,5 +60,12 @@ header button:hover {
 @media (max-width: 500px) {
   header nav {
     gap: 0px;
+  }
+}
+
+@media (max-height: 400px) {
+  header h1,
+  header button {
+    font-size: 0.8rem;
   }
 }

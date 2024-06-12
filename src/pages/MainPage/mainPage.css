@@ -84,7 +84,7 @@
   animation: glowing 20s linear infinite;
 }
 
-@media (max-width:500px) {
+@media (max-width: 500px) {
   #mainPageTitle h1 {
     font-size: 3rem;
   }
@@ -92,10 +92,22 @@
     font-size: 1.5rem;
   }
   #playBtn,
-#pauseBtn {
-  font-size: 20px;
+  #pauseBtn {
+    font-size: 20px;
+  }
 }
-  
+
+@media (max-height: 400px) {
+  #mainPageTitle h1 {
+    font-size: 2.5rem;
+  }
+  #mainPageTitle h2 {
+    font-size: 1.5rem;
+  }
+  #playBtn,
+  #pauseBtn {
+    font-size: 15px;
+  }
 }
 
 @keyframes glowing {
