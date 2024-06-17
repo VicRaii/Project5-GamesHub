@@ -1,5 +1,7 @@
 import "./mainPage.css";
 
+let sound;
+
 export const mainPage = () => {
   const mainPageContainer = document.createElement("div");
   const mainPageTitle = document.createElement("div");
@@ -12,7 +14,9 @@ export const mainPage = () => {
   <h2>Play Some Music</h2>
   `;
 
-  let sound = new Audio("./gaming-lofi-mix-comprimido.mp3");
+  if (!sound) {
+    sound = new Audio("./gaming-lofi-mix-comprimido.mp3");
+  }
 
   const audioDiv = document.createElement("div");
   const playButton = document.createElement("button");

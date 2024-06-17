@@ -92,7 +92,6 @@
   #game {
     width: 90%;
     height: 60svh;
-    left: 5%;
   }
 
   #character {
@@ -109,20 +108,19 @@
 @media (max-width: 400px) {
   #game {
     width: 90%;
-    height: 60svh;
-    left: 5%;
+    height: 70svh;
   }
 
   #character {
     width: 30px;
     height: 50px;
-    bottom: 60px;
+    bottom: 45px;
     left: 35px;
   }
   #block {
     width: 20px;
     height: 20px;
-    bottom: 70px;
+    bottom: 65px;
   }
 }
 
@@ -130,7 +128,6 @@
   #game {
     width: 90%;
     height: 80svh;
-    left: 5%;
   }
   #assetsContainer {
     width: 100%;

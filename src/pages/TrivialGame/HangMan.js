@@ -3,33 +3,31 @@ import "./HangMan.css";
 
 export const HangManGame = () => {
   const app = document.querySelector("#app");
-  const mainContainer = document.createElement("div"); // Contenedor principal
+  const mainContainer = document.createElement("div");
   const wordDisplay = document.createElement("div");
-  const hangmanDisplay = document.createElement("img"); // Usamos img en lugar de div para las imágenes
+  const hangmanDisplay = document.createElement("img");
   const message = document.createElement("div");
+  const downSideContainer = document.createElement("div");
   const alphabetContainer = document.createElement("div");
+  const buttonAndWordsContainer = document.createElement("div");
   const newGameButton = document.createElement("button");
   const guessedWordsContainer = document.createElement("div");
 
-  mainContainer.id = "main-container"; // ID para el contenedor principal
-
+  mainContainer.id = "main-container";
   wordDisplay.id = "word-display";
   hangmanDisplay.id = "hangman-display";
-  hangmanDisplay.src = hangmanImages[0]; // Inicializamos con la primera imagen
+  hangmanDisplay.src = hangmanImages[0];
   message.id = "message";
+  downSideContainer.id = "down-side-container";
+  buttonAndWordsContainer.id = "button-and-words";
   alphabetContainer.id = "alphabet-container";
   guessedWordsContainer.id = "guessed-words-container";
   newGameButton.id = "new-game-button";
   newGameButton.textContent = "Nuevo Juego";
 
-  mainContainer.append(
-    wordDisplay,
-    hangmanDisplay,
-    message,
-    alphabetContainer,
-    newGameButton,
-    guessedWordsContainer
-  );
+  mainContainer.append(hangmanDisplay, wordDisplay, message, downSideContainer);
+  downSideContainer.append(alphabetContainer, buttonAndWordsContainer);
+  buttonAndWordsContainer.append(guessedWordsContainer, newGameButton);
   app.appendChild(mainContainer);
 
   const wordList = WORDS;
@@ -82,7 +80,7 @@ export const HangManGame = () => {
   }
 
   function createAlphabetButtons() {
-    alphabetContainer.innerHTML = ""; // Clear existing buttons
+    alphabetContainer.innerHTML = "";
     const alphabet = "abcdefghijklmnñopqrstuvwxyz".split("");
     alphabet.forEach((letter) => {
       const button = document.createElement("button");
