@@ -1,16 +1,17 @@
 import { WORDS, hangmanImages } from "../../data/data";
 import "./HangMan.css";
 
-// Rutas de las imágenes para cada etapa del ahorcado
-
 export const HangManGame = () => {
   const app = document.querySelector("#app");
+  const mainContainer = document.createElement("div"); // Contenedor principal
   const wordDisplay = document.createElement("div");
   const hangmanDisplay = document.createElement("img"); // Usamos img en lugar de div para las imágenes
   const message = document.createElement("div");
   const alphabetContainer = document.createElement("div");
   const newGameButton = document.createElement("button");
   const guessedWordsContainer = document.createElement("div");
+
+  mainContainer.id = "main-container"; // ID para el contenedor principal
 
   wordDisplay.id = "word-display";
   hangmanDisplay.id = "hangman-display";
@@ -21,7 +22,7 @@ export const HangManGame = () => {
   newGameButton.id = "new-game-button";
   newGameButton.textContent = "Nuevo Juego";
 
-  app.append(
+  mainContainer.append(
     wordDisplay,
     hangmanDisplay,
     message,
@@ -29,6 +30,7 @@ export const HangManGame = () => {
     newGameButton,
     guessedWordsContainer
   );
+  app.appendChild(mainContainer);
 
   const wordList = WORDS;
   let word = "";
@@ -75,13 +77,13 @@ export const HangManGame = () => {
     }
 
     if (attempts >= maxAttempts) {
-      message.textContent = "¡Has perdido! La palabra era: " + word;
+      message.textContent = "La palabra era: " + word;
     }
   }
 
   function createAlphabetButtons() {
     alphabetContainer.innerHTML = ""; // Clear existing buttons
-    const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+    const alphabet = "abcdefghijklmnñopqrstuvwxyz".split("");
     alphabet.forEach((letter) => {
       const button = document.createElement("button");
       button.textContent = letter;

@@ -1,7 +1,7 @@
 import { createHeader } from "./src/components/Header/Header";
 import { memoryGame } from "./src/pages/MemoryGame/memoryGame";
 import { mainPage } from "./src/pages/MainPage/mainPage";
-import { GAMES, WORDS } from "./src/data/data";
+import { GAMES } from "./src/data/data";
 import "./style.css";
 import { footer } from "./src/components/Footer/Footer";
 import { JumperGame } from "./src/pages/JumperGame/JumperGame";
