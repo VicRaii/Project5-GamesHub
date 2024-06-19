@@ -119,17 +119,17 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   #alphabet-container {
-    width: 95%;
+    width: 90%;
   }
   .alphabet-button {
-    font-size: 12px;
-    padding: 7px;
+    font-size: 15px;
+    padding: 6px;
   }
 }
 
-@media (max-height: 400px) {
+@media (max-height: 450px) {
   #hangman-display {
     width: 25%;
     max-height: 20svh;

@@ -63,7 +63,7 @@ header button:hover {
   }
 }
 
-@media (max-height: 400px) {
+@media (max-height: 450px) {
   header h1,
   header button {
     font-size: 0.8rem;

@@ -97,7 +97,7 @@
   }
 }
 
-@media (max-height: 400px) {
+@media (max-height: 450px) {
   #mainPageTitle h1 {
     font-size: 2.5rem;
   }
